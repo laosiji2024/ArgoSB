@@ -8,11 +8,11 @@
 
 脚本如下，默认安装为Argo临时隧道（UUID、主协议vmess端口未设变量时，为随机生成）
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)
+bash <(wget -qO- https://raw.githubusercontent.com/laosiji2024/argosb/main/argosb.sh)
 ```
 或者
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/laosiji2024/argosb/main/argosb.sh)
 ```
 ---------------------------------------------------------
 
@@ -24,11 +24,11 @@ bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.s
 
 2、升级ArgoSB脚本：
 
-```agsb up``` 或者 ```bash <(wget -qO- https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh) up```
+```agsb up``` 或者 ```bash <(wget -qO- https://raw.githubusercontent.com/laosiji2024/argosb/main/argosb.sh) up```
 
 3、卸载ArgoSB脚本：
 
-```agsb del``` 或者 ```bash <(wget -qO- https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh) del```
+```agsb del``` 或者 ```bash <(wget -qO- https://raw.githubusercontent.com/laosiji2024/argosb/main/argosb.sh) del```
 
 ----------------------------------------------------------
 
@@ -37,12 +37,12 @@ bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.s
 #### 1、Argo临时隧道：
 #### 脚本前必须要有端口(vmpt)、UUID密码(uuid)两个变量，每次重装后临时域名都不相同
 ```
-uuid=你的uuid vmpt=vps可使用的端口 bash <(wget -qO- https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)
+uuid=你的uuid vmpt=vps可使用的端口 bash <(wget -qO- https://raw.githubusercontent.com/laosiji2024/argosb/main/argosb.sh)
 ```
 #### 2、Argo固定隧道：
 #### 脚本前必须要有端口(vmpt)、UUID密码(uuid)、固定域名(agn)、token(agk)四个变量，每次重装后输出节点信息不变
 ```
-vmpt=VPS可使用的端口 agn=固定域名 agk=ey开头的token bash <(wget -qO- https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)
+vmpt=VPS可使用的端口 agn=固定域名 agk=ey开头的token bash <(wget -qO- https://raw.githubusercontent.com/laosiji2024/argosb/main/argosb.sh)
 ```
 
 #### 注：如果服务器支持任意端口，临时隧道端口变量(vmpt)可以不用设置，因为Argo节点用不到主协议vmess的端口
@@ -67,7 +67,7 @@ vmpt=VPS可使用的端口 agn=固定域名 agk=ey开头的token bash <(wget -qO
 
 ----------------------------------------------------------
 ### 感谢你右上角的star🌟
-[![Stargazers over time](https://starchart.cc/yonggekkk/ArgoSB.svg)](https://starchart.cc/yonggekkk/ArgoSB)
+[![Stargazers over time](https://starchart.cc/laosiji2024/ArgoSB.svg)](https://starchart.cc/laosiji2024/ArgoSB)
 
 ----------------------------------------------------------
 
