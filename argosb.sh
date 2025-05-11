@@ -11,7 +11,7 @@ echo "当前版本：25.5.10 测试beta7版"
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 export UUID=${uuid:-''}
 export port_vm_ws=${vmpt:-''}
-export ARGO_DOMAIN=${agn:-''}   
+export ARGO_DOMAIN=${agnss:-''}   
 export ARGO_AUTH=${agk:-''} 
 if [ -z "$nix" ]; then 
 [[ $EUID -ne 0 ]] && echo "当前为主流VPS专用脚本模式，必须以root模式运行。请在脚本前加上 nix=y 切换为容器NIX模式运行" && exit
@@ -359,7 +359,7 @@ echo "当前uuid密码：$UUID"
 echo
 [ -f ~/.bashrc ] || touch ~/.bashrc
 sed -i '/yonggekkk/d' ~/.bashrc
-echo "export nix=y uuid=${uuid} vmpt=${port_vm_ws} agn=${ARGO_DOMAIN} agk=${ARGO_AUTH} && bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)" >> ~/.bashrc
+echo "export nix=y uuid=${uuid} vmpt=${port_vm_ws} agns=${ARGO_DOMAIN} agk=${ARGO_AUTH} && bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)" >> ~/.bashrc
 source ~/.bashrc
 sleep 2
 
